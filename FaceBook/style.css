@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f0f2f5;
+    padding-bottom: 70px;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.uni{
+    width: 100%;
+}
+
+button{
+    cursor: pointer;
+}
+
+.container{
+    max-width: 34%;
+    background-color: white;
+    margin: auto;
+    box-shadow: 1px 5px 11px gray;
+    border-radius: 6px;
+}
+body img{
+    /* width: 300px; */
+    /* margin: auto; */
+    text-align: center;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+.form{
+    padding: 16px;
+}
+
+.topcontent{
+    padding: 16px 16px 4px 16px;
+}
+
+.container #sign-up-form h2{
+    font-size: 25px;
+    text-align: center;
+    /* padding-top: 16px; */
+}
+
+#sign-up-form p{
+    text-align: center;
+    font-size: 16px;
+    margin-block: 5px;
+
+}
+
+#sign-up-form hr{
+    margin-block: 8px;
+}
+
+#sign-up-form input{
+    padding: 11px;
+    border: 1px solid #ccd0d5;
+    font-size: 15px;
+    border-radius: 6px;
+    outline:  none;
+}
+
+#sign-up-form input::placeholder{
+    font-size: 15px;
+}
+
+.name-inputs{
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+#sign-up-form .name-inputs input{
+    width: 48.6%;
+}
+
+.date-box{
+    margin-bottom: 16px;
+}
+
+.date-box label{
+    display: block;
+    font-size: 14px;
+}
+
+.all-gender-inputs{
+    gap: 10px;
+    margin:8px 0px 16px 0px;
+}
+
+.gender-box .all-gender-inputs div{
+    width: 32%;
+    padding:11px;
+    border: 1px solid #ccd0d5;
+    border-radius: 6px;
+    justify-content: space-between;
+}
+
+.option-boxes{
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.option-boxes select{
+    width: 32%;
+    padding: 11px;
+    
+    border: 1px solid #ccd0d5;
+    border-radius: 6px;
+}
+
+.option-boxes label{
+    font-size:14px;
+}
+
+.gender-box label{
+    font-size: 14px;
+}
+
+.phone-password-box input{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.bottom-p{
+    font-size: 12px !important;
+    color: gray;
+    margin-bottom: 13px !important;
+    text-align: left !important;
+}
+
+#sign-up-form button{
+    background-color: #00a400;
+    color: white;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    height: 36px;
+    padding: 0 32px;
+    border-radius: 6px;
+    min-width: 200px;
+    margin: auto;
+    display: block;
+    font-family: 'Helvetica', sans-serif;
+
+}
+
+.form-change-link{
+    display: block;
+    text-align: center;
+    margin-block: 16px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width:620px) {
+    .container{
+        max-width: 90%;
+    }
+
+    .all-gender-inputs{
+        flex-wrap: wrap;
+    }
+
+    .gender-box .all-gender-inputs div{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:620px) and (max-width:1080px) {
+    .container{
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width:380px)
+{
+    .option-boxes{
+        flex-wrap: wrap;
+    }
+
+    .option-boxes select{
+        width: 100%;
+    }
+}

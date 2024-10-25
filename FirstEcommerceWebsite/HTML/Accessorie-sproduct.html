@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- linking main css file   -->
+     <link rel="stylesheet" href="../CSS/style.css">
+     <link rel="stylesheet" href="../CSS/womenPageStyle.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <nav class="flex">
+        <div class="left-nav flex">
+        <div class="logo">
+            <a href="./index.html"><img src="../Images/logo@2x-free-img-120x40.png" alt=""></a>
+        </div>
+
+        <ul class="flex">
+            <li><a href="#">Everything</a></li>
+            <li><a href="./womenproducts.html">Women</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Accesories</a></li>
+        </ul>
+        </div>
+
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a id="show-total-amm">$00.00</a></li>
+                <li class="shop-count"><a href="#" class=""><i class="fa-solid fa-bag-shopping"></i></a> <span class="show-count-number">0</span></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <!-- Cart Right side div design starts from here  -->
+
+<section class="view-cart">
+    <div class="flex uni shopping-cart-heading">
+        <h2>Shopping Cart</h2>
+        <i class="fa-solid fa-x"></i>
+    </div>
+
+    <div class="all-added-carts uni"> 
+    <div class="cart-item">
+        <img src="../Images/tshirt2-300x300.jpg" alt="">
+        <div>
+            <h3>Flamingo Tshirt - Yellow</h3>
+            <p>1 x $28.00</p>
+        </div>
+
+        <p><i class="fa-solid fa-x"></i></p>
+    </div>
+    </div>
+
+    <div class="sub-total-cart flex">
+        <p>Subtotal :</p>
+        <p id="subtotal-show">$00.00</p>
+    </div>
+
+    <div class="view-cart-btn uni">
+        <button>View Cart</button>
+    </div>
+</section>
+
+
+
+
+
+    <main class="flex">
+        <aside>
+            <div class="search-box flex">
+                <input type="text" placeholder="Search products...">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <div class="filter-box">
+                <h2>Filter by Price</h2>
+                <input type="range" value="20" min="20" max="200" id="filter-range">
+                <div class="filter-btn-price flex">
+                    <button>Filter</button>
+                    <p>Price:$20 - $200</p>
+                </div>
+            </div>
+
+            <div class="categories-box">
+                <h2>Categories</h2>
+                <div class="flex">
+                    <p>Accessories</p>
+                    <span>(7)</span>
+                </div>
+                <div class="flex">
+                    <p>Men</p>
+                    <span>(14)</span>
+                </div>
+                <div class="flex">
+                    <p>Women</p>
+                    <span>(17)</span>
+                </div>
+            </div>
+
+            <div class="best-seller-box">
+                <h2>Our Best Sellers</h2>
+
+                <div class="seller-list">
+                    <div class="product-box flex">
+                        <img src="../Images/tshirt4-300x300.jpg" alt="">
+                        <div>
+                            <p>Purple T-Shirt</p>
+                            <p>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                            <p>$25.00 - $27.00</p>
+                        </div>
+                    </div>
+
+                    <div class="product-box flex">
+                        <img src="../Images/product-m-jeans3-300x300.jpg" alt="">
+                        <div>
+                            <p>Faint Washed Denim Blue</p>
+                            <p>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                            <p>$150.00</p>
+                        </div>
+                    </div>
+
+                    <div class="product-box flex">
+                        <img src="../Images/product-bag1-300x300 (1).jpg" alt="">
+                        <div>
+                            <p>Light Brown Purse</p>
+                            <p>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                            <p>$150.00</p>
+                        </div>
+
+                        
+            
+                    </div>
+
+                    <div class="product-box flex">
+                        <img src="../Images/tshirt3-300x300.jpg" alt="">
+                        <div>
+                            <p>Flamingo T-shirt</p>
+                            <p>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                            <p>$25.00 - $28.00</p>
+                        </div>
+                    </div>
+
+                    <div class="product-box flex">
+                        <img src="../Images/product-m-jeans2-300x300.jpg" alt="">
+                        <div>
+                            <p>Dark Blue Denim Jeans</p>
+                            <p>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                            <p>$150.00</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </aside>
+        <div class="right-section">
+            <div class="section-content">
+                <h4>Home/Accessories</h4>
+                <h2>Accessories</h2>
+                <p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed ut.</p>
+
+                <div class="product-images flex">
+                    <div class="pro-items">
+                        <img src="../Images/product-accessory2-300x300.jpg" alt="">
+                        <h3>Anchor Bracelet</h3>
+                        <p>Accessories</p>
+                        <p>$150.0 - <span id ="pro-price">$180.0</span></p>
+
+                        <div class="color-btns">
+                            <input type="radio" name="AccesoriesBracelet" data="blue" class="black-color-btn" checked>
+                            <input type="radio" name="AccesoriesBracelet" data="green" class="orange-color-btn">
+                            <input type="radio" name="AccesoriesBracelet" data="brown" class="brown-color-btn">
+                        </div>
+
+                        <p>
+                            <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                        </p>
+
+                        <div class="cart-icon-show">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="pro-items">
+                        <img src="../Images/product-bag2-300x300.jpg" alt="">
+                        <h3>Black Over-the-shoulder Handbag</h3>
+                        <p>Accessories</p>
+                        <p><span id ="pro-price">$150.0</span></p>
+
+                        <p>
+                            <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                        </p>
+
+                        <div class="cart-icon-show">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="pro-items">
+                        <img src="../Images/product-accessory1-300x300.jpg" alt="">
+                        <h3>Boho Bangle Bracelet</h3>
+                        <p>Accessories</p>
+                        <p>$150.0 - <span id ="pro-price">$180.0</span></p>
+                        
+                        <div class="color-btns">
+                            <input type="radio" class="blue-color-btn" name="Bracelets" data ="black">
+                            <input type="radio" class="green-color-btn" name="Bracelets" data ="green">
+                            <input type="radio" class="red-color-btn" name="Bracelets" data ="red">
+                        </div>
+        
+
+                        <p>
+                            <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                        </p>
+
+                        <div class="cart-icon-show">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="pro-items">
+                        <img src="../Images/product-bag4-300x300.jpg" alt="">
+                        <h3>Bright Gold Purse With Chain</h3>
+                        <p>Accessories</p>
+                        <p><span id ="pro-price">$150.0</span></p>
+                        
+                        <p>
+                            <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                        </p>
+
+                        <div class="cart-icon-show">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="pro-items">
+                        <img src="../Images/product-bag3-300x300 (1).jpg" alt="">
+                        <h3>Bright Red Bag</h3>
+                        <p>Accessories</p>
+                        <p>$100.0 -<span id ="pro-price">$140.0</span></p>
+                        
+                        <div class="color-btns">
+                            <input type="radio" class="blue-color-btn" name="bags" data="blue">
+                            <input type="radio" class="orange-color-btn" name="bags" data="orange">
+                            <input type="radio" class="pink-color-btn" name="bags" data="pink">
+                            <input type="radio" class="brown-color-btn" name="bags" data="brown" checked>
+                        </div>
+
+                        <p>
+                            <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                        </p>
+
+                        <div class="cart-icon-show">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                    </div>
+
+                    <div class="pro-items">
+                        <img src="../Images/product-accessory3-300x300.jpg" alt="">
+                        <h3>Buddha Bracelet</h3>
+                        <p>Accessories</p>
+                        <p><span id ="pro-price">$150.0</span></p>
+                        
+                        <p>
+                            <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                        </p>
+
+                        <div class="cart-icon-show">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                    </div>
+
+
+
+                    <div class="pro-items">
+                        <img src="../Images/product-bag1-300x300 (1).jpg" alt="">
+                        <h3>Light Brown Purse</h3>
+                        <p>Accesories</p>
+                        <p><span id ="pro-price">$150.00</span></p>
+                        
+                        <p>
+                            <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                        </p>
+
+                        <div class="cart-icon-show">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    
+    <footer class="uni">
+        <h2>SALE UP TO 70% OFF FOR ALL CLOTHES & FASHION ITEMS, ON ALL BRANDS.</h2>
+        <hr>
+        <div class="footer-content flex">
+            <div>
+                <img src="../Images/logo@2x-free-img-120x40.png" alt="">
+                <h3>The best look anytime, anywhere.</h3>
+            </div>
+
+            <div class="footer-links">
+                <ul>      
+                    <li><h3>For Her</h3></li>
+                    <li><a href="#">Women Jeans</a></li>
+                    <li><a href="#">Tops and Shirts</a></li>
+                    <li><a href="#">Women Jackets</a></li>
+                    <li><a href="#">Heels and Flats</a></li>
+                    <li><a href="#">Women Accessories</a></li>
+                </ul>
+                <ul>
+                    <li><h3>For Him</h3></li>
+                    <li><a href="#">Men Jeans</a></li>
+                    <li><a href="#">Men Shirt</a></li>
+                    <li><a href="#">Men Shoes</a></li>
+                    <li><a href="#">Men Accessories </a></li>
+                    <li><a href="#">Men Jeackets</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Subscribe</h3>
+                <input type="email" placeholder="Your email address...">
+
+                <button class="shop-btn">Subscribe</button>
+            </div>
+        </div>
+
+        <div class="copyrights main-max-width flex">
+            <h4>Copyright © 2024 Brandstore. Powered by Brandstore.</h4>
+
+            <p>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.google.com"><i class="fa-brands fa-google"></i></a>
+            </p>
+        </div>
+    </footer>
+
+
+<script src="../JS/script.js"></script>
+</body>
+</html>

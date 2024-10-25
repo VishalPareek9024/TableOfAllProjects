@@ -1,0 +1,47 @@
+.form p{
+    font-size: 20px;
+    text-align: center;
+    margin-block: 16px;
+}
+
+.login-container{
+    max-width: 30%;
+    margin: auto;
+    background-color: white;
+    border-radius: 6px;
+    padding-bottom: 16px;
+    box-shadow: 1px 5px 10px gray;
+
+}
+
+.login-container input{
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    font-size: 17px;
+    border: 1px solid #ccd0d5;
+    outline: none;
+    border-radius: 6px;
+}
+
+.login-container input::placeholder{
+    font-size: 15px;
+    
+}
+
+.login-container button{
+    line-height: 48px;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #1877f2;
+    color: white;
+}
+
+
+
+@media screen and (max-width:620px) {
+    .login-container{
+        max-width: 90%;
+    }
+}

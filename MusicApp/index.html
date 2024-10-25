@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <!-- font popins link  -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+    <!-- stylesheet link  -->
+    <link rel="stylesheet" href="./MusicAppAssets/style.css">
+
+    <!-- Font Awesome Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- AOS Animation Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+
+<body>
+
+    <section class="form-section signup-section">
+        <div class="form-max-width">
+        <h2>Sign up</h2>
+       
+            <div class="form">
+                <input type="text" id="first-name" required placeholder="First Name">    
+                <input type="text" id="last-name" required placeholder="Last Name">    
+                <input type="email"  class="email" id="sign-email" required placeholder="Email">    
+                <input type="password" class="password" id="sign-password" required placeholder="Password">
+                <button id="sign-btn">Sign Up</button>
+                <p id="login-form-link">Login</p>
+            </div>
+       
+        </div>
+    </section>
+
+    <section class="form-section login-section">
+        <div class="form-max-width">
+        <h2>Login</h2>
+       
+            <div class="form">
+                <input type="email" id="login-email" class="email" required placeholder="Email">    
+                <input type="password" id="login-password" class="password" required placeholder="Password">
+                <button id="login-btn">Login</button>
+                <p id="sign-form-link">Signup</p>
+            </div>
+       
+        </div>
+    </section>
+
+
+    <main>
+
+    <header class="uniwidth flex">
+        <div class="logo flex">
+            <img src="./MusicAppAssets/images/logo.jfif" alt="logo">
+            <h1>VishalVibes</h1>
+        </div>
+
+        <nav>
+            <ul class="flex">
+                <li><a id="home">Home</a></li>
+                <li><a onclick="faviorateSongDisplay()" id="favorite-song">Faviorate</a></li>
+                <li><a  id="profile-link">Profile</a></li>
+                <li><a>Add a Song</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+
+   
+
+    <section class="uniwidth section1">
+        <div class="songlist">
+            <div class="song flex">
+                <img src="./MusicAppAssets/images/edaNiChldeSongCoverImg.jfif" alt="">
+                <h2>Eda Ni Chlde Pyar</h2>
+                <div class="control-btns"> 
+                   <i class="fa-solid fa-play play"></i> 
+                   <i class="fa-regular fa-heart faviorate"></i>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="song flex">
+                <img src="./MusicAppAssets/images/courtMeGoliSong.jfif" alt="">
+                <h2>Court Me Goli</h2>
+               <div class="control-btns">
+                <i class="fa-solid fa-play play"></i> 
+                <i class="fa-regular fa-heart faviorate"></i>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="song flex">
+                <img src="./MusicAppAssets/images/AamJaheMundeSong.jfif" alt="">
+                <h2>Aam Jahe Munde</h2>
+                <div class="control-btns">
+                    <i class="fa-solid fa-play play"></i> 
+                    <i class="fa-regular fa-heart faviorate"></i>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="song flex">
+            <img src="./MusicAppAssets/images/tutionDyaBadmashiSongmg.jfif" alt="">
+            <h2>Tution Badmasi Ka</h2>
+            <div class="control-btns">
+                <i class="fa-solid fa-play play"></i> 
+                <i class="fa-regular fa-heart faviorate"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="song flex">
+            <img src="./MusicAppAssets/images/sameBeefSong.jfif" alt="">
+            <h2>Same Beef Song</h2>
+            <div class="control-btns">
+                <i class="fa-solid fa-play play"></i> 
+                <i class="fa-regular fa-heart faviorate"></i>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="song flex">
+            <img src="./MusicAppAssets/images/lastRideSongImg.jfif" alt="">
+            <h2>Last Ride Song</h2>
+            <div class="control-btns">
+                <i class="fa-solid fa-play play"></i> 
+                <i class="fa-regular fa-heart faviorate"></i>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="song flex">
+            <img src="./MusicAppAssets/images/thaaSongImg.jfif" alt="">
+            <h2>Thaa Song</h2>
+            <div class="control-btns">
+                <i class="fa-solid fa-play play"></i> 
+                <i class="fa-regular fa-heart faviorate"></i>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="song flex">
+            <img src="./MusicAppAssets/images/varindra12BandeSong.jfif" alt="">
+            <h2>12 Bande Song</h2>
+            <div class="control-btns">
+                <i class="fa-solid fa-play play"></i> 
+                <i class="fa-regular fa-heart faviorate"></i>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="song flex">
+            <img src="./MusicAppAssets/images/californiaSongImg.jfif" alt="">
+            <h2>Calfornia Song</h2>
+            <div class="control-btns">
+                <i class="fa-solid fa-play play"></i> 
+                <i class="fa-regular fa-heart faviorate"></i>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="song flex">
+            <img src="./MusicAppAssets/images/veKamleyaSong.jfif" alt="">
+            <h2>Ve Kamleya Song</h2>
+            <div class="control-btns">
+                <i class="fa-solid fa-play play"></i> 
+                <i class="fa-regular fa-heart faviorate"></i>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="song flex">
+            <img src="./MusicAppAssets/images/kahaniSunoSong.jfif" alt="">
+            <h2>Kahani Suno Song</h2>
+            <div class="control-btns">
+                <i class="fa-solid fa-play play"></i> 
+                <i class="fa-regular fa-heart faviorate"></i>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="song flex">
+            <img src="./MusicAppAssets/images/mainHuSathTereSong.jfif" alt="">
+            <h2>Main Hu Sath Tere</h2>
+            <div class="control-btns">
+                <i class="fa-solid fa-play play"></i> 
+                <i class="fa-regular fa-heart faviorate"></i>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="song flex">
+            <img src="./MusicAppAssets/images/babeBapuSongImg.jfif" alt="">
+            <h2>Bebe Bapu Song</h2>
+            <div class="control-btns">
+                <i class="fa-solid fa-play play"></i> 
+                <i class="fa-regular fa-heart faviorate"></i>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+    <section class="uniwidth section2 hide">
+    <div class="afterplaysong">
+        <div class="backword" id="back">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+
+        <div id="songname">
+            <h2>Dil Meri Na Sune </h2>
+        </div>
+
+        <img src="./MusicAppAssets/images/atifaslam.jfif" alt="">
+
+        <h3>Singer Name</h3>
+
+        <input type="range" min="0" max="100">
+
+        <i class="fa-solid fa-backward"></i>
+        <i class="fa-solid fa-pause "></i>
+        <i class="fa-solid fa-forward"></i>
+
+        <audio src="" id="myAudio" autoplay  controls ></audio>
+
+    </div>
+    </section>
+
+    
+
+<div class="section-3 uniwidth" id="section-3">
+    <div class="all-fav-songs">
+       
+    </div>
+</div>    
+
+
+
+<!--  Profile Section Starts From here  -->
+
+<section class="section-4 uniwidth">
+
+    <div class="main-profile">
+
+        <div id="back-to-home">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+
+        <img src="./MusicAppAssets/images/avatarfirst.jfif" alt="" id="profile-img">
+        <div class="inpabs">
+            <input type="file" id="upload">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <h2 id="user-name-show">Name</h2>
+        <p>Feel the Rhytm,Live the Vibe</p>
+
+        <button id="sign-out">Sign Out</button>
+    </div>
+
+</section>
+
+
+
+
+
+</main>
+
+
+<div class="section-5 uniwidth">
+    <h1>Admin Pannel</h1>
+    <div class="main-admin">
+      <div class="admin-panel">
+      <h2>Admin</h2>
+        <input type="text" placeholder="Name :" id="admin-name">
+        <h2>Password</h2>
+        <input type="text" placeholder="Password" id="admin-password">
+        <button id="admin-panel-btn">Admin Paneel</button>
+    </div>
+
+
+    <div class="adding-song">
+        <h2>Song Name :</h2>
+        <input type="text" placeholder="Song Name" id="new-song-name">
+
+        <h2>Singer Name</h2>
+        <input type="text" placeholder="Singer Name" id="new-singer-name">
+
+        <div class="select-img">
+            <button>Select Banner Image For Song</button>
+            <input type="file" name="" id="upload-img">
+        </div>
+
+        
+        <div class="select-img">
+            <button>Select Song</button>
+            <input type="file" name="" id="upload-song">
+        </div>
+        
+        <button id="upload-btn">Add Song</button>
+    </div>
+</div>
+
+
+
+    <script src="./MusicAppAssets/script.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+
+
+
+
+
+<!-- <audio controls src="./MusicAppAssets/audio/Kaifi_Khalil_-_Kahani_Suno_2.0_[Official_Music_Video](256k).mp3"></audio>
+<audio src="./MusicAppAssets/audio/Eda_Ni_Chalde_Pyar_Sohniye_(Official_Video)_No_Love_Song_Shubh__Gin_Gin_Ke_Dil_Tod_Di_Ap_Dhillon(256k).mp3" controls></audio> 
+ <audio src="./MusicAppAssets/audio/New_Punjabi_Songs___Satinder_Sartaaj__Sajjan_Raazi__Jatinder_Shah__Latest_Punjabi_Songs(128k).mp3" controls></audio>
+ <audio src="" controls></audio>
+ <audio src=""></audio> -->
+</html>
+
+<!-- kexixo2790@janfab.com -->
+<!-- kexixo2790@janfab.com -->
+<!-- hardik@7833 -->
+<!-- 
+<div class="fav-song flex">
+    <img src="./MusicAppAssets/images/edaNiChldeSongCoverImg.jfif" alt="">
+    <h2>Eda Ni Chlde Pyar Soniye</h2>
+    <i class="fa-solid fa-pause"></i>
+</div> -->
+
