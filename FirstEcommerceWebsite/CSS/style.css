@@ -113,8 +113,13 @@ nav a{
     border-radius: 50%;
 }
 
+
 .shop-count{
     position: relative;
+}
+
+.menuicon{
+    display: none;
 }
 
 .banner-content{

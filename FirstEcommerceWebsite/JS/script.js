@@ -210,6 +210,27 @@ headerCartBagIcon.addEventListener('click',()=>{
 })
 
 
+
+// Menu icon code which display in responsive header
+
+document.querySelector('.menuicon i').addEventListener('click',()=>{
+    if(document.querySelector('.menuicon i').classList.contains('fa-bars')){
+
+    document.querySelector('.responsiveMenu').style.visibility= "visible"
+    document.querySelector('.left-nav ul').style.visibility= "visible"
+    document.querySelector('.menuicon i').classList.remove('fa-bars')  
+    document.querySelector('.menuicon i').classList.add('fa-x')  
+    }
+
+    else{
+         document.querySelector('.responsiveMenu').style.visibility= "hidden"
+    document.querySelector('.left-nav ul').style.visibility= "hidden"
+        document.querySelector('.menuicon i').classList.remove('fa-x')  
+    document.querySelector('.menuicon i').classList.add('fa-bars')    
+    }
+})
+
+
 // Getting the value of range in the filter box 
 
 // filterRange.addEventListener('change',()=>{

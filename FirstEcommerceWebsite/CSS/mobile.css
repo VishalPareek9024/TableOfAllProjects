@@ -24,6 +24,11 @@
     margin-left: 0;
     background: black;
     animation: ab 1s 1 ease-in;
+    visibility: hidden;
+}
+
+.menuicon{
+    display: block;
 }
 
 .right-nav ul li:nth-child(2){
@@ -59,6 +64,7 @@
     gap: 20px;
     background: black;
     animation: ab 1s 1 ease-in;
+    visibility: hidden;
 }
 
 
@@ -196,11 +202,65 @@ input[type=radio]{
     width: 100%;
 }
 
+
+/* Other pages stylesheet */
+
+main{
+    flex-direction: column-reverse;
+    padding: 0
+}
+
+main aside,main .right-section{
+    width: 100%;
+}
+
+main aside{
+    display: none;
+}
+
+.right-section .section-content{
+    padding: 32px 0px 0px 0px;
+}
+
+.right-section{
+    padding: 24px;
+}
+
+.pro-items{
+    width: 48%;
+}
+
+.pro-items h3{
+    font-size: 17px;
+}
+
+.product-images{
+    column-gap: 13px;
+}
+
+nav ul li a{
+    color: white;
+}
+
+.shop-count a{
+    color: black;
+}
+
+nav ul li:nth-child(5) a,nav ul li:nth-child(4) a
+{
+    color: black;
+}
+
+
 }
 
 
 @media screen and (min-width:600px) and (max-width:980px)
 {
+    .menuicon{
+        display: block;
+    }
+
     .latest-products div:nth-child(1),.latest-products div:nth-child(2)
     {
         width: 48.6%;
@@ -218,10 +278,23 @@ input[type=radio]{
     .section5 div{
         width: 48%;
     }
+
+    
+.pro-items{
+    width: 32%;
+}
+
+nav ul li a{
+    color: white;
+}
 }
 
 @media screen and (min-width:800px) and (max-width:1180px)
 {
+    .menuicon{
+        display: block;
+    }
+
     .banner-content h1{
         font-size: 60px;
         max-width: 90%;
@@ -237,4 +310,5 @@ input[type=radio]{
     .logo img{
         width: 130px;
     }
+
 }

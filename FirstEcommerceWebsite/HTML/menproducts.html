@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <!-- linking main css file   -->
-     <link rel="stylesheet" href="../CSS/style.css">
-     <link rel="stylesheet" href="../CSS/womenPageStyle.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/womenPageStyle.css">
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
+
 <body>
     <nav class="flex">
         <div class="left-nav flex">
-        <div class="logo">
-            <a href="./index.html"><img src="../Images/logo@2x-free-img-120x40.png" alt=""></a>
-        </div>
+            <div class="logo">
+                <a href="./index.html"><img src="../Images/logo@2x-free-img-120x40.png" alt=""></a>
+            </div>
 
-        <ul class="flex">
-            <li><a href="#">Everything</a></li>
-            <li><a href="./womenproducts.html">Women</a></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Accesories</a></li>
-        </ul>
+            <ul class="flex">
+                <li><a href="#">Everything</a></li>
+                <li><a href="./womenproducts.html">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Accesories</a></li>
+            </ul>
         </div>
 
         <div class="right-nav">
             <ul class="flex">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact us</a></li>
+                <div class="responsiveMenu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </div>
                 <li><a id="show-total-amm">$00.00</a></li>
-                <li class="shop-count"><a href="#" class=""><i class="fa-solid fa-bag-shopping"></i></a> <span class="show-count-number">0</span></li>
+                <li class="shop-count"><a href="#" class=""><i class="fa-solid fa-bag-shopping"></i></a> <span
+                        class="show-count-number">0</span></li>
                 <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+
+                <li class="menuicon"><i class="fa-solid fa-bars"></i></li>
             </ul>
         </div>
 
@@ -43,33 +50,33 @@
 
     <!-- Cart Right side div design starts from here  -->
 
-<section class="view-cart">
-    <div class="flex uni shopping-cart-heading">
-        <h2>Shopping Cart</h2>
-        <i class="fa-solid fa-x"></i>
-    </div>
-
-    <div class="all-added-carts uni"> 
-    <div class="cart-item">
-        <img src="../Images/tshirt2-300x300.jpg" alt="">
-        <div>
-            <h3>Flamingo Tshirt - Yellow</h3>
-            <p>1 x $28.00</p>
+    <section class="view-cart">
+        <div class="flex uni shopping-cart-heading">
+            <h2>Shopping Cart</h2>
+            <i class="fa-solid fa-x"></i>
         </div>
 
-        <p><i class="fa-solid fa-x"></i></p>
-    </div>
-    </div>
+        <div class="all-added-carts uni">
+            <div class="cart-item">
+                <img src="../Images/tshirt2-300x300.jpg" alt="">
+                <div>
+                    <h3>Flamingo Tshirt - Yellow</h3>
+                    <p>1 x $28.00</p>
+                </div>
 
-    <div class="sub-total-cart flex">
-        <p>Subtotal :</p>
-        <p id="subtotal-show">$00.00</p>
-    </div>
+                <p><i class="fa-solid fa-x"></i></p>
+            </div>
+        </div>
 
-    <div class="view-cart-btn uni">
-        <button>View Cart</button>
-    </div>
-</section>
+        <div class="sub-total-cart flex">
+            <p>Subtotal :</p>
+            <p id="subtotal-show">$00.00</p>
+        </div>
+
+        <div class="view-cart-btn uni">
+            <button>View Cart</button>
+        </div>
+    </section>
 
 
 
@@ -155,8 +162,8 @@
                             <p>$150.00</p>
                         </div>
 
-                        
-            
+
+
                     </div>
 
                     <div class="product-box flex">
@@ -197,21 +204,24 @@
             <div class="section-content">
                 <h4>Home/Women</h4>
                 <h2>Men</h2>
-                <p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed ut.</p>
+                <p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu
+                    in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque
+                    elit sed ut.</p>
 
                 <div class="product-images flex">
                     <div class="pro-items">
                         <img src="../Images/product-hoodie1-300x300.jpg" alt="">
                         <h3>Black Hoodie</h3>
                         <p>Men</p>
-                        <p><span id ="pro-price">$150.00</span></p>
+                        <p><span id="pro-price">$150.00</span></p>
 
                         <p>
                             <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                         </p>
 
                         <div class="cart-icon-show">
@@ -223,13 +233,13 @@
                         <img src="../Images/product-hoodie2-300x300.jpg" alt="">
                         <h3>Blue Hoodie</h3>
                         <p>Men</p>
-                        <p><span id ="pro-price">$150.00</span></p>
+                        <p><span id="pro-price">$150.00</span></p>
                         <p>
                             <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                         </p>
 
                         <div class="cart-icon-show">
@@ -243,7 +253,7 @@
                         <h3>Gray Pattern Tshirt</h3>
                         <p>Women</p>
                         <p><span id="pro-price">$31.0</span></p>
-                        
+
                         <div class="color-btns">
                             <input type="radio" name="tshirts" class="blue-color-btn" name="bags" data="blue">
                             <input type="radio" name="tshirts" class="green-color-btn" name="bags" data="orange">
@@ -254,10 +264,10 @@
 
                         <p>
                             <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                         </p>
 
                         <div class="cart-icon-show">
@@ -270,14 +280,14 @@
                         <img src="../Images/product-m-jeans2-300x300.jpg" alt="">
                         <h3>Dark Blue Denim Jeans</h3>
                         <p>Men</p>
-                        <p><span id ="pro-price">$150.0</span></p>
+                        <p><span id="pro-price">$150.0</span></p>
 
                         <p>
                             <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                         </p>
 
                         <div class="cart-icon-show">
@@ -291,14 +301,14 @@
                         <img src="../Images/product-m-jeans1-300x300.jpg" alt="">
                         <h3>Dark Brown Denim Shorts</h3>
                         <p>Men</p>
-                        <p><span id ="pro-price">$180.0</span></p>
+                        <p><span id="pro-price">$180.0</span></p>
 
                         <p>
                             <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                         </p>
 
                         <div class="cart-icon-show">
@@ -306,19 +316,19 @@
                         </div>
                     </div>
 
-                    
+
                     <div class="pro-items">
                         <img src="../Images/product-m-jeans4-300x300.jpg" alt="">
                         <h3>Dark Gray Jeans</h3>
                         <p>Mens</p>
-                        <p><span id ="pro-price">$180.0</span></p>
+                        <p><span id="pro-price">$180.0</span></p>
 
                         <p>
                             <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                         </p>
 
                         <div class="cart-icon-show">
@@ -331,14 +341,14 @@
                         <img src="../Images/sports-shoe1-300x300.jpg" alt="">
                         <h3>DNK Blue Shoes</h3>
                         <p>Mens</p>
-                        <p><span id ="pro-price">$240.00</span></p>
-                        
+                        <p><span id="pro-price">$240.00</span></p>
+
                         <p>
                             <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                         </p>
 
                         <div class="cart-icon-show">
@@ -351,8 +361,8 @@
                         <img src="../Images/sports-shoe4-300x300 (1).jpg" alt="">
                         <h3>DNK Green Shoes</h3>
                         <p>Accessories</p>
-                        <p><span id ="pro-price">$200.0</span></p>
-                        
+                        <p><span id="pro-price">$200.0</span></p>
+
                         <div class="color-btns">
                             <input type="radio" class="blue-color-btn" name="bags" data="blue">
                             <input type="radio" class="orange-color-btn" name="bags" data="orange">
@@ -362,10 +372,10 @@
 
                         <p>
                             <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                         </p>
 
                         <div class="cart-icon-show">
@@ -377,14 +387,14 @@
                         <img src="../Images/product-accessory3-300x300.jpg" alt="">
                         <h3>Buddha Bracelet</h3>
                         <p>Accessories</p>
-                        <p><span id ="pro-price">$150.0</span></p>
-                        
+                        <p><span id="pro-price">$150.0</span></p>
+
                         <p>
                             <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                         </p>
 
                         <div class="cart-icon-show">
@@ -397,7 +407,7 @@
                         <img src="../Images/sports-shoe2-300x300.jpg" alt="">
                         <h3>DNK Red Shoes</h3>
                         <p>Accessories</p>
-                        <p>$175.0 -<span id ="pro-price">$200.0</span></p>
+                        <p>$175.0 -<span id="pro-price">$200.0</span></p>
                         <p>
                             <input type="radio" name="shoes" class="black-color-btn">
                             <input type="radio" name="shoes" class="orange-color-btn">
@@ -406,10 +416,10 @@
 
                         <p>
                             <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                         </p>
 
                         <div class="cart-icon-show">
@@ -423,13 +433,13 @@
                         <h3>Dark Yellow Shoes</h3>
                         <p>Men</p>
                         <p>$150 - <span id="pro-price">$120</span></p>
-                        
+
                         <p>
                             <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                         </p>
 
                         <div class="cart-icon-show">
@@ -443,13 +453,13 @@
                         <h3>Faint Washed Denim Blue Jeans</h3>
                         <p>Men</p>
                         <p><span id="pro-price">$210.0</span></p>
-                        
+
                         <p>
                             <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                         </p>
 
                         <div class="cart-icon-show">
@@ -466,7 +476,7 @@
 
 
 
-    
+
     <footer class="uni">
         <h2>SALE UP TO 70% OFF FOR ALL CLOTHES & FASHION ITEMS, ON ALL BRANDS.</h2>
         <hr>
@@ -477,8 +487,10 @@
             </div>
 
             <div class="footer-links">
-                <ul>      
-                    <li><h3>For Her</h3></li>
+                <ul>
+                    <li>
+                        <h3>For Her</h3>
+                    </li>
                     <li><a href="#">Women Jeans</a></li>
                     <li><a href="#">Tops and Shirts</a></li>
                     <li><a href="#">Women Jackets</a></li>
@@ -486,7 +498,9 @@
                     <li><a href="#">Women Accessories</a></li>
                 </ul>
                 <ul>
-                    <li><h3>For Him</h3></li>
+                    <li>
+                        <h3>For Him</h3>
+                    </li>
                     <li><a href="#">Men Jeans</a></li>
                     <li><a href="#">Men Shirt</a></li>
                     <li><a href="#">Men Shoes</a></li>
@@ -517,6 +531,7 @@
     </footer>
 
 
-<script src="../JS/script.js"></script>
+    <script src="../JS/script.js"></script>
 </body>
+
 </html>
