@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+    <!-- mobile CSS -->
+     <link rel="stylesheet" href="../CSS/mobile.css">
+
     <!-- owl carousel links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
@@ -39,8 +42,10 @@
 
             <div class="right-nav">
                 <ul class="flex">
+                    <div class="responsiveMenu">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact us</a></li>
+                    </div>
                     <li><a id="show-total-amm">$00.00</a></li>
                     <li class="shop-count"><a class=""><i class="fa-solid fa-bag-shopping"></i></a> <span class="show-count-number">0</span></li>
                     <li><a href=""><i class="fa-solid fa-user"></i></a></li>
@@ -482,7 +487,7 @@
         autoplayHoverPause:true,
         responsive:{
         0:{
-            items:1
+            items:2
         },
         600:{
             items:3

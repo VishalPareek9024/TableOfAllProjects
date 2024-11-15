@@ -91,6 +91,9 @@ nav a{
     margin-left: 10px;
 }
 
+.responsiveMenu{
+    display: flex;
+}
 
 
 .shop-count .show-count-number{
@@ -130,7 +133,7 @@ nav a{
 }
 
 .banner-content h1,.banner-content h2{
-    max-width: 50%;
+    max-width: 70%;
 }
 
 .banner-content h2{
