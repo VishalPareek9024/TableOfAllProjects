@@ -170,3 +170,16 @@ aside h2{
 .color-btns{
     margin-block: 10px;
 }
+
+
+
+@media screen and (max-width:980px) {
+
+    nav ul li:nth-child(5) a, nav ul li:nth-child(4) a{
+        color: white !important;
+    }
+
+    nav .right-nav ul .shop-count, nav .right-nav ul .shop-count ~ li a {
+        color: black !important;;
+    }
+}
